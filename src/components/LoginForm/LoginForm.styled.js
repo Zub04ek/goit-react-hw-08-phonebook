@@ -2,19 +2,23 @@ import styled from '@emotion/styled';
 import { Form as FormikForm } from 'formik';
 import { Button } from '@chakra-ui/react';
 
-export const Form = styled(FormikForm)`
-  width: 400px;
-  padding: 20px;
-  border: 1px solid #7fadf7;
-  border-radius: 8px;
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
+  padding: 40px;
+`;
+
+export const Form = styled(FormikForm)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 `;
 
 export const FormField = styled.label`
-  width: 360px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -22,6 +26,7 @@ export const FormField = styled.label`
 `;
 
 export const SubmitButton = styled(Button)`
+  width: 200px;
   &:hover,
   :focus {
     background-color: #7fadf7;

@@ -1,15 +1,14 @@
 import styled from '@emotion/styled';
+import { Button } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
-export const ContactCard = styled.div`
-  display: flex;
+export const ContactCard = styled(Flex)`
   justify-content: space-between;
-  width: 320px;
+  align-items: center;
+  width: 360px;
 `;
 
-export const DeleteButton = styled.button`
-  width: 80px;
-  border: 1px solid #cfcfd0;
-  border-radius: 4px;
+export const DeleteButton = styled(Button)`
   &:hover,
   :focus {
     background-color: #7fadf7;

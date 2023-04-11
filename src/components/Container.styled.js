@@ -1,8 +1,9 @@
 import styled from '@emotion/styled';
+import { Flex } from '@chakra-ui/react';
 
-export const Container = styled.div`
-  display: flex;
+export const Container = styled(Flex)`
   flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  gap: 24px;
   padding: 40px;
 `;
